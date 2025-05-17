@@ -11,7 +11,7 @@
 <div class="max-w-5xl mx-auto bg-white rounded-2xl overflow-hidden text-black">
   <!-- Tabs -->
 <div class="flex">
-  <button class="tab-button px-6 py-4 font-semibold w-1/3 text-white active-tab" onclick="showTab(0)">CapRadio Audience</button>
+  <button class="tab-button px-6 py-4 font-semibold w-1/3" onclick="showTab(0)">CapRadio Audience</button>
   <button class="tab-button px-6 py-4 font-semibold w-1/3" onclick="showTab(1)">News Composition</button>
   <button class="tab-button px-6 py-4 font-semibold w-1/3" onclick="showTab(2)">Music Composition</button>
 </div>
@@ -29,25 +29,25 @@
   <script>
     const tabData = [
       {
-        gender: [48, 52],
-        age: [17, 19, 15, 15, 34],
-        income: [60, 27, 13]
+        genderPercentage: [0, 0],
+        agePercentage: [0],
+        incomePercentage: [0]
       },
       {
-        gender: [50, 50],
-        age: [13, 20, 2, 3, 62],
-        income: [50, 10, 40]
+        genderPercentage: [48, 52],
+        agePercentage: [13, 20, 2, 3, 62],
+        incomePercentage: [50, 10, 40]
       },
       {
-        gender: [51, 49],
-        age: [12, 22, 18, 16, 32],
-        income: [55, 30, 15]
+        genderPercentage: [51, 49],
+        agePercentage: [12, 22, 18, 16, 32],
+        incomePercentage: [55, 30, 15]
       }
     ];
 
-    const ageLabels = ['18–34', '35–44', '45–54', '55–64', '65+'];
-    const incomeLabels = ['$100K+', '$50K–$100K', 'Under $50K'];
-    const genderLabels = ['Female', 'Male'];
+    const age = ['18–34', '35–44', '45–54', '55–64', '65+'];
+    const income = ['$100K+', '$50K–$100K', 'Under $50K'];
+    const gender = ['Female', 'Male'];
 
     let currentChartInstances = [];
 
@@ -59,9 +59,9 @@
 
       const data = tabData[index];
 
-      const genderChartLabels = data.gender.map((v, i) => `${v}% ${genderLabels[i]}`);
-      const ageChartLabels = data.age.map((v, i) => `${v}% ${ageLabels[i]}`);
-      const incomeChartLabels = data.income.map((v, i) => `${v}% ${incomeLabels[i]}`);
+      const genderChartLabels = data.genderPercentage.map((v, i) => `${v}% ${gender[i]}`);
+      const ageChartLabels = data.agePercentage.map((v, i) => `${v}% ${age[i]}`);
+      const incomeChartLabels = data.incomePercentage.map((v, i) => `${v}% ${income[i]}`);
 
       document.getElementById('tab-content').innerHTML = `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -110,7 +110,7 @@
         data: {
           labels: genderChartLabels,
           datasets: [{
-            data: data.gender,
+            data: data.genderPercentage,
             backgroundColor: ['#4DA6B3', '#134C5E'],
             borderWidth: 0
           }]
@@ -123,7 +123,7 @@
         data: {
           labels: ageChartLabels,
           datasets: [{
-            data: data.age,
+            data: data.agePercentage,
             backgroundColor: ['#E27D60', '#E8A87C', '#C38D9E', '#41B3A3', '#6B1E1E'],
             borderWidth: 0
           }]
@@ -136,7 +136,7 @@
         data: {
           labels: incomeChartLabels,
           datasets: [{
-            data: data.income,
+            data: data.incomePercentage,
             backgroundColor: ['#6B1E1E', '#A63D40', '#D95D39'],
             borderWidth: 0
           }]
@@ -146,7 +146,7 @@
     }
 
     // Initial tab load
-    showTab(0);
+    showTab(1);
   </script>
 </body>
 </html>
