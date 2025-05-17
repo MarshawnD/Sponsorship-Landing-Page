@@ -65,21 +65,20 @@
 
       document.getElementById('tab-content').innerHTML = `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <p class="text-sm mb-2">CapRadio news listeners spend over <strong>$2.5 billion annually</strong> in metro area retail sales</p>
-            <canvas id="incomeChart"></canvas>
+          <div class="bg-gray-100 p-4 rounded-xl">
+            <p class="text-center">CapRadio news listeners spend over <strong>$2.5 billion annually</strong> in metro area retail sales</p>
           </div>
-          <div>
-            <h3 class="font-semibold mb-2">Gender</h3>
+          <div class="bg-gray-100 p-4 rounded-xl">
+            <h3 class="text-center text-lg mt-2">Gender</h3>
             <canvas id="genderChart"></canvas>
           </div>
-          <div>
-            <h3 class="font-semibold mb-2">Age Ranges</h3>
+          <div class="bg-gray-100 p-4 rounded-xl">
+            <h3 class="text-center text-lg mt-2">Age Ranges</h3>
             <canvas id="ageChart"></canvas>
           </div>
-          <div>
-            <h3 class="font-semibold mb-2">Household Income</h3>
-            <canvas id="incomeChart2"></canvas>
+          <div class="bg-gray-100 p-4 rounded-xl">
+            <h3 class="text-center text-lg mt-2">Household Income</h3>
+            <canvas id="incomeChart"></canvas>
           </div>
         </div>
         <p class="text-xs mt-4 italic">
@@ -131,7 +130,7 @@
         options: commonOptions
       }));
 
-      currentChartInstances.push(new Chart(document.getElementById('incomeChart2'), {
+      currentChartInstances.push(new Chart(document.getElementById('incomeChart'), {
         type: 'pie',
         data: {
           labels: incomeChartLabels,
