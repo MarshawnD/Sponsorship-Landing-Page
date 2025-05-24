@@ -875,6 +875,10 @@ video {
   padding: 20px;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1194,6 +1198,10 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:max-w-\[442px\] {
+    max-width: 442px;
   }
 
   .lg\:text-\[56px\] {
