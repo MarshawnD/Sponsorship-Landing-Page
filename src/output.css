@@ -625,12 +625,20 @@ video {
   margin-top: 100px;
 }
 
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[339px\] {
@@ -810,6 +818,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#d9d9d9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[url\(\/img\/full-coverage-map\.png\)\] {
   background-image: url(/img/full-coverage-map.png);
 }
@@ -879,12 +892,21 @@ video {
   padding-bottom: 60px;
 }
 
+.px-\[2px\] {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pb-\[40px\] {
+  padding-bottom: 40px;
 }
 
 .text-center {
