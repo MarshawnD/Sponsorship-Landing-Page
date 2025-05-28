@@ -10,7 +10,6 @@
 
   .carousel-container {
     overflow: hidden;
-    border: 2px solid #ddd;
     background: white;
     position: relative;
     display: flex;
@@ -51,6 +50,8 @@
     padding: 0.5rem;
     cursor: pointer;
     z-index: 10;
+    width: 26px;
+    height: 100%;
   }
 
   .arrow.left {
@@ -75,4 +76,13 @@
     font-size: 1rem;
     padding: 0.4rem 0.8rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pause-control-wrapper svg {
+    width: 16px;
+    height: auto;
+    fill: #333;
   }
