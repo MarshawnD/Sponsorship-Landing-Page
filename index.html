@@ -183,7 +183,28 @@
             </div>
               
         </section>
-            
+
+    <!-- Logo Carousel -->
+        <figure class="flex flex-col items-center">
+            <figcaption class="hidden">Sponsor logos</figcaption>
+            <div class="carousel-container">
+              <div class="carousel-track" id="carouselTrack">
+                <img src="https://via.placeholder.com/120x80?text=Logo+1" alt="Logo 1" />
+                <img src="https://via.placeholder.com/120x80?text=Logo+2" alt="Logo 2" />
+                <img src="https://via.placeholder.com/120x80?text=Logo+3" alt="Logo 3" />
+                <img src="https://via.placeholder.com/120x80?text=Logo+4" alt="Logo 4" />
+                <img src="https://via.placeholder.com/120x80?text=Logo+5" alt="Logo 5" />
+              </div>
+            </div>
+          
+            <div class="carousel-controls">
+              <button type="button" id="leftBtn">⬅️ Left</button>
+              <button type="button" id="playPauseBtn">⏸ Pause</button>
+              <button type="button" id="rightBtn">Right ➡️</button>
+            </div>
+          
+          </figure>
+
         <footer class="p-[20px] flex flex-col items-center text-center text-[14px] text-[#2e3033] leading-[18.2px]">
             <div class="sm:max-w-[65%] xl:max-w-full">
                 <p>
@@ -239,10 +260,50 @@
             }
           }
         }
-        </script>
 
-    <script>
         includeHTML();
+
+        // Logo Carousel //////////
+
+        const track = document.getElementById('carouselTrack');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const leftBtn = document.getElementById('leftBtn');
+        const rightBtn = document.getElementById('rightBtn');
+    
+        // Duplicate logos for seamless looping
+        track.innerHTML += track.innerHTML;
+    
+        let position = 0;
+        let speed = 0.5;
+        let playing = true;
+    
+        function animate() {
+          if (playing) {
+            position -= speed;
+            if (Math.abs(position) >= track.scrollWidth / 2) {
+              position = 0;
+            }
+            track.style.transform = `translateX(${position}px)`;
+          }
+          requestAnimationFrame(animate);
+        }
+    
+        playPauseBtn.addEventListener('click', () => {
+          playing = !playing;
+          playPauseBtn.textContent = playing ? '⏸ Pause' : '▶️ Play';
+        });
+    
+        leftBtn.addEventListener('click', () => {
+          position -= 100;
+          track.style.transform = `translateX(${position}px)`;
+        });
+    
+        rightBtn.addEventListener('click', () => {
+          position += 100;
+          track.style.transform = `translateX(${position}px)`;
+        });
+    
+        animate();
     </script>
 
     <script src="/audience chart.js"></script>

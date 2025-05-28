@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    background: white;
+  }
+
+  .carousel-track {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+  }
+
+  .carousel-track img {
+    height: 80px;
+    margin: 0 20px;
+    flex-shrink: 0;
+  }
+
+  .carousel-controls {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+  }
