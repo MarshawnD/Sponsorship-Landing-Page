@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.carousel-container {
+.carousel-wrapper {
     position: relative;
     width: 100%;
     max-width: 800px;
+  }
+
+  .carousel-container {
     overflow: hidden;
     border: 2px solid #ddd;
     background: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .carousel-container:hover .control,
+  .carousel-container:focus-within .control {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .carousel-track {
@@ -23,8 +35,44 @@
     flex-shrink: 0;
   }
 
-  .carousel-controls {
-    margin-top: 1rem;
-    display: flex;
-    gap: 10px;
+  .control {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .arrow.left {
+    left: 0;
+  }
+
+  .arrow.right {
+    right: 0;
+  }
+
+  .pause-control-wrapper {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .pause-control-wrapper button {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
   }
