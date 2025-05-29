@@ -562,6 +562,10 @@ video {
   margin: 2px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -717,16 +721,24 @@ video {
   max-width: 600px;
 }
 
-.max-w-\[750px\] {
-  max-width: 750px;
-}
-
 .max-w-\[640px\] {
   max-width: 640px;
 }
 
-.flex-none {
-  flex: none;
+.max-w-\[750px\] {
+  max-width: 750px;
+}
+
+.max-w-\[1200px\] {
+  max-width: 1200px;
+}
+
+.max-w-\[720px\] {
+  max-width: 720px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .transform {
@@ -735,22 +747,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -775,10 +771,6 @@ video {
 
 .gap-\[13px\] {
   gap: 13px;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .overflow-hidden {
@@ -1218,10 +1210,6 @@ video {
     margin-right: 60px;
   }
 
-  .sm\:mr-\[40px\] {
-    margin-right: 40px;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -1330,10 +1318,6 @@ video {
     margin-right: 40px;
   }
 
-  .xl\:mr-\[16px\] {
-    margin-right: 16px;
-  }
-
   .xl\:mt-\[16px\] {
     margin-top: 16px;
   }
@@ -1344,10 +1328,6 @@ video {
 
   .xl\:flex {
     display: flex;
-  }
-
-  .xl\:grid {
-    display: grid;
   }
 
   .xl\:hidden {
