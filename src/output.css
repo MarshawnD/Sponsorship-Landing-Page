@@ -721,6 +721,10 @@ video {
   max-width: 750px;
 }
 
+.flex-none {
+  flex: none;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1190,6 +1194,10 @@ video {
     margin-right: 60px;
   }
 
+  .sm\:mr-\[40px\] {
+    margin-right: 40px;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1289,6 +1297,18 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mr-\[40px\] {
+    margin-right: 40px;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:hidden {
     display: none;
   }

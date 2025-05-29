@@ -32,73 +32,88 @@
             <h2 class="text-[29px] text-center leading-[35px] font-semibold mb-[24px] max-w-[600px]">
                 Your Message. Multiple Platforms. One Trusted Source.  
             </h2>
-            
-            <div class="max-w-[600px]">
-                <p>
-                    Block text mentions operating <strong>32 fully licensed stations</strong> from Modesto to Eureka, serving nearly <strong>500,000 people a week</strong> via radio, streaming, digital articles, newsletters and more. CapRadio Network text bold 1.5 million or make that number stand out. 
-                </p>
 
-                <br>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur. Volutpat at risus in mi nisl sit. Magna est risus amet imperdiet nunc at accumsan feugiat lectus. Ultrices et ultrices libero congue. Fringilla nec eget sem senectus.
-                </p>
-            </div>
-
-            <div>
-        <!-- Chips -->
-                <div class="bg-[#f1f1f3] uppercase font-semibold flex justify-between items-center text-[#5C0000] rounded-[30px] w-[335px] p-[20px]">
-                    <span class="flex items-center">
-                        <i class="mr-2 bg-[#9E2A2F] rounded-[60px] min-w-[60px] h-[60px]"></i>
-                        <p class="text-[14px] leading-[18.2px]">broadcast & streaming</p>
-                    </span>
-                    <span class="text-center">
-                        <p class="mb-[4px] text-[#9E2A2F] text-[31px] leading-[37.2px]">380K</p>
-                        <p class="text-[12px] leading-[15.6px] font-normal">
-                            Weekly
-                            <br> 
-                            Listeners
+            <div class="xl:flex">
+                <div class="flex flex-col items-center xl:mr-[40px]">
+                    <div class="max-w-[600px]">
+                        <p>
+                            Block text mentions operating <strong>32 fully licensed stations</strong> from Modesto to Eureka, serving nearly <strong>500,000 people a week</strong> via radio, streaming, digital articles, newsletters and more. CapRadio Network text bold 1.5 million or make that number stand out. 
                         </p>
-                    </span>
+
+                        <br>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Volutpat at risus in mi nisl sit. Magna est risus amet imperdiet nunc at accumsan feugiat lectus. Ultrices et ultrices libero congue. Fringilla nec eget sem senectus.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row">
+                    <!-- Chips -->
+                            <div class="bg-[#f1f1f3] uppercase font-semibold flex justify-between items-center text-[#5C0000] rounded-[30px] w-[335px] p-[20px] sm:mr-[40px]">
+                                <span class="flex items-center">
+                                    <i class="mr-2 bg-[#9E2A2F] rounded-[60px] min-w-[60px] h-[60px]"></i>
+                                    <p class="text-[14px] leading-[18.2px]">broadcast & streaming</p>
+                                </span>
+                                <span class="text-center">
+                                    <p class="mb-[4px] text-[#9E2A2F] text-[31px] leading-[37.2px]">380K</p>
+                                    <p class="text-[12px] leading-[15.6px] font-normal">
+                                        Weekly
+                                        <br> 
+                                        Listeners
+                                    </p>
+                                </span>
+                            </div>
+
+                    <!-- Mobile & Tablet Coverage Map -->
+                            <div 
+                                style="background-size: 165%; min-width: 335px;" 
+                                class="border-2 border-indigo-500/100 bg-[url(/img/full-coverage-map.png)]
+                                    h-[339px] bg-no-repeat xl:hidden"
+                                aria-label="Full Coverage Map"
+                                alt="Full Coverage Map"
+                                title="Full Coverage Map">
+                            </div>
+                        </div>
+
+                    <!-- Legend -->
+                        <div class="text-[14px]">
+                        <div class="pt-2 pb-2 gap-[13px] sm:flex">
+                            <h4 class="uppercase font-semibold leading-[21px] mb-[13px] sm:mb-[0px]">Legend</h4>
+                            <ul class="flex flex-wrap items-center gap-[13px] leading-[18px]">
+                                    <li class="flex items-center">
+                                        <i class="mr-1 bg-[#9E2A2F]">icon</i>
+                                        <p>CapRadio</p>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="mr-1 bg-[#009B79]">icon</i>
+                                        <p>North State Public Radio</p>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="mr-1 bg-[#00A3BA]">icon</i>
+                                        <p>North Coast Public Radio</p>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="mr-1 bg-[#E87722]">icon</i>
+                                        <p>Stockton / Modesto Hub</p>
+                                    </li>
+                            </ul>
+                        </div> 
+
+                        <p class="mt-2"><em>Source: Information about where we sourced our data. Lorem ipsum dolor sit amet consectetur.</em></p>
+                        </div>
                 </div>
 
-        <!-- Coverage Map -->
-                <div 
-                    style="background-size: 165%; min-width: 335px;" 
-                    class="border-2 border-indigo-500/100 bg-[url(/img/full-coverage-map.png)]
-                        h-[339px] bg-no-repeat"
-                    aria-label="Full Coverage Map"
-                    alt="Full Coverage Map"
-                    title="Full Coverage Map">
-                </div>
+            <!-- Desktop Coverage Map -->
+            <div 
+                style="background-size: 165%; min-width: 335px;" 
+                class="hidden xl:block border-2 border-indigo-500/100 bg-[url(/img/full-coverage-map.png)]
+                    h-[339px] bg-no-repeat"
+                aria-label="Full Coverage Map"
+                alt="Full Coverage Map"
+                title="Full Coverage Map">
             </div>
+        </div>
 
-        <!-- Legend -->
-            <div class="text-[14px]">
-               <div class="pt-2 pb-2 gap-[13px] sm:flex">
-                   <h4 class="uppercase font-semibold leading-[21px] mb-[13px] sm:mb-[0px]">Legend</h4>
-                   <ul class="flex flex-wrap items-center gap-[13px] leading-[18px]">
-                        <li class="flex items-center">
-                            <i class="mr-1 bg-[#9E2A2F]">icon</i>
-                            <p>CapRadio</p>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="mr-1 bg-[#009B79]">icon</i>
-                            <p>North State Public Radio</p>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="mr-1 bg-[#00A3BA]">icon</i>
-                            <p>North Coast Public Radio</p>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="mr-1 bg-[#E87722]">icon</i>
-                            <p>Stockton / Modesto Hub</p>
-                        </li>
-                   </ul>
-               </div> 
-
-               <p class="mt-2"><em>Source: Information about where we sourced our data. Lorem ipsum dolor sit amet consectetur.</em></p>
-            </div>
         </section>
 
     <!-- Quote -->
