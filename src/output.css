@@ -581,6 +581,11 @@ video {
   margin-bottom: 40px;
 }
 
+.my-\[24px\] {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -635,6 +640,10 @@ video {
 
 .mt-\[40px\] {
   margin-top: 40px;
+}
+
+.mb-\[12px\] {
+  margin-bottom: 12px;
 }
 
 .block {
@@ -759,6 +768,10 @@ video {
 
 .gap-\[13px\] {
   gap: 13px;
+}
+
+.gap-\[12px\] {
+  gap: 12px;
 }
 
 .overflow-hidden {
@@ -1335,8 +1348,20 @@ video {
     display: none;
   }
 
+  .xl\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .xl\:w-\[312px\] {
+    width: 312px;
+  }
+
   .xl\:max-w-full {
     max-width: 100%;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 
   .xl\:flex-col {
@@ -1345,5 +1370,9 @@ video {
 
   .xl\:gap-\[16px\] {
     gap: 16px;
+  }
+
+  .xl\:pl-\[0px\] {
+    padding-left: 0px;
   }
 }
