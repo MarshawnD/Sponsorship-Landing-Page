@@ -938,6 +938,11 @@ video {
   padding-right: 40px;
 }
 
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1340,6 +1345,22 @@ video {
 
   .md\:pl-\[40px\] {
     padding-left: 40px;
+  }
+
+  .md\:text-\[31px\] {
+    font-size: 31px;
+  }
+
+  .md\:text-\[25px\] {
+    font-size: 25px;
+  }
+
+  .md\:leading-\[30px\] {
+    line-height: 30px;
+  }
+
+  .md\:leading-\[37px\] {
+    line-height: 37px;
   }
 }
 
