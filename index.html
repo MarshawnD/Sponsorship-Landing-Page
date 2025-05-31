@@ -291,32 +291,51 @@
                         Lorem ipsum dolor sit amet consectetur. Volutpat at risus in mi nisl sit. Magna est risus amet imperdiet nunc at accumsan feugiat lectus. Ultrices et ultrices libero congue. Fringilla nec eget sem senectus.
                     </p>
 
-                    <figure class="flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
-                        <audio id="audio-player" src="https://23263.live.streamtheworld.com/JAZZSTREAM.mp3"></audio>
+                    <figure class="custom-audio-player mb-[8px] flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
+                        <audio src="https://23263.live.streamtheworld.com/JAZZSTREAM.mp3"></audio>
                       
                         <div class="flex items-center justify-center">
-                          <button
-                            type="button"
-                            id="audioPlayPauseBtn"
-                            class="w-[24px]"
-                            aria-label="Play or pause audio"
-                          >
-                            <!-- Play Icon -->
-                            <svg id="audioPlayIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6 fill-current">
-                              <path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+                          <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
+                            <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                              class="w-[21px] fill-current">
+                              <path
+                                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
                             </svg>
                       
-                            <!-- Pause Icon (hidden initially) -->
-                            <svg id="audioPauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6 fill-current hidden">
-                              <path d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+                            <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                              class="w-[21px] fill-current hidden">
+                              <path
+                                d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
                             </svg>
                           </button>
                         </div>
-
-                        <figcaption class="text-[18px] leading-[24px]">
-                            Lorem ipsum dolor sit amet 
-                          </figcaption>
-                      </figure>  
+                      
+                        <figcaption class="text-[18px] leading-[24px]">JAZZ ipsum dolor sit amet </figcaption>
+                      </figure>
+                      
+                      <!-- Copy the same structure for Player 2 -->
+                      <figure class="custom-audio-player flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
+                        <audio src="https://playerservices.streamtheworld.com/api/livestream-redirect/KXJZAAC.aac"></audio>
+                      
+                        <div class="flex items-center justify-center">
+                          <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
+                            <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                              class="w-[21px] fill-current">
+                              <path
+                                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+                            </svg>
+                      
+                            <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                              class="w-[21px] fill-current hidden">
+                              <path
+                                d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5 21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+                            </svg>
+                          </button>
+                        </div>
+                      
+                        <figcaption class="text-[18px] leading-[24px]">NEWS ipsum dolor sit amet </figcaption>
+                      </figure>
+                       
                 </div>
             </div>
               
@@ -422,27 +441,43 @@
         includeHTML();
 
         // Audio Player /////////////
-        const audio = document.getElementById('audio-player');
-                        const audioPlayIcon = document.getElementById('audioPlayIcon');
-                        const audioPauseIcon = document.getElementById('audioPauseIcon');
-                        const btn = document.getElementById('audioPlayPauseBtn');
-                      
-                        btn.addEventListener('click', () => {
-                          if (audio.paused) {
-                            audio.play();
-                            audioPlayIcon.classList.add('hidden');
-                            audioPauseIcon.classList.remove('hidden');
-                          } else {
-                            audio.pause();
-                            audioPauseIcon.classList.add('hidden');
-                            audioPlayIcon.classList.remove('hidden');
-                          }
-                        });
-                      
-                        audio.addEventListener('ended', () => {
-                          audioPauseIcon.classList.add('hidden');
-                          audioPlayIcon.classList.remove('hidden');
-                        });
+        const players = document.querySelectorAll('.custom-audio-player');
+
+        players.forEach(player => {
+            const audio = player.querySelector('audio');
+            const playIcon = player.querySelector('[data-play-icon]');
+            const pauseIcon = player.querySelector('[data-pause-icon]');
+            const btn = player.querySelector('.playPauseBtn');
+
+            btn.addEventListener('click', () => {
+            if (audio.paused) {
+                // Pause other players first
+                players.forEach(p => {
+                const a = p.querySelector('audio');
+                const pi = p.querySelector('[data-play-icon]');
+                const paui = p.querySelector('[data-pause-icon]');
+                if (!a.paused) {
+                    a.pause();
+                    pi.classList.remove('hidden');
+                    paui.classList.add('hidden');
+                }
+                });
+
+                audio.play();
+                playIcon.classList.add('hidden');
+                pauseIcon.classList.remove('hidden');
+            } else {
+                audio.pause();
+                pauseIcon.classList.add('hidden');
+                playIcon.classList.remove('hidden');
+            }
+            });
+
+            audio.addEventListener('ended', () => {
+            pauseIcon.classList.add('hidden');
+            playIcon.classList.remove('hidden');
+            });
+        });
 
         // Logo Carousel //////////
         const track = document.getElementById('carouselTrack');
