@@ -277,65 +277,135 @@
         </section>
 
     <!-- Products -->
-        <section class="bg-[#f1f1f3] px-[20px] py-[40px] flex flex-col items-center">
-            <h2 class="text-[29px] text-center leading-[35px] font-semibold mb-[24px]">
+        <section class="bg-[#f1f1f3] px-[20px] py-[40px] flex flex-col items-center sm:px-[40px]">
+            <h2 class="text-[29px] text-center leading-[35px] font-semibold mb-[24px] md:mb-[48px]">
                 Products 
             </h2>
 
-            <div class="flex flex-col items-center max-w-[750px] sm:flex-row">
-                <img src="/img/your-message.png" alt="" class="mb-4 w-[300px] max-w-[400px] sm:mr-[60px] ">
+            <div class="grid gap-[32px]">
+                <div class="flex flex-col items-center max-w-[750px] md:flex-row">
+                    <img src="/img/your-message.png" alt="" class="mb-4 w-[300px] max-w-[400px] md:mr-[60px] ">
 
-                <div class="">
-                    <h3 class="mb-2 text-[24px] leading-[29px] font-semibold">Broadcast</h3>
-                    <p class="mb-4 text-[18px] leading-[24px] sm:mb-[36px]">
-                        Lorem ipsum dolor sit amet consectetur. Volutpat at risus in mi nisl sit. Magna est risus amet imperdiet nunc at accumsan feugiat lectus. Ultrices et ultrices libero congue. Fringilla nec eget sem senectus.
-                    </p>
+                    <div class="">
+                        <h3 class="mb-2 text-[24px] leading-[29px] font-semibold">Broadcast</h3>
+                        <p class="mb-4 text-[18px] leading-[24px] md:mb-[36px]">
+                            Lorem ipsum dolor sit amet consectetur. Volutpat at risus in mi nisl sit. Magna est risus amet imperdiet nunc at accumsan feugiat lectus. Ultrices et ultrices libero congue. Fringilla nec eget sem senectus.
+                        </p>
 
-                    <figure class="custom-audio-player mb-[8px] flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
-                        <audio src="https://23263.live.streamtheworld.com/JAZZSTREAM.mp3"></audio>
-                      
-                        <div class="flex items-center justify-center">
-                          <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
-                            <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                              class="w-[21px] fill-current">
-                              <path
-                                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
-                            </svg>
-                      
-                            <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                              class="w-[21px] fill-current hidden">
-                              <path
-                                d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
-                            </svg>
-                          </button>
+                        <figure class="custom-audio-player mb-[8px] flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
+                            <audio src="https://23263.live.streamtheworld.com/JAZZSTREAM.mp3"></audio>
+                        
+                            <div class="flex items-center justify-center">
+                            <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
+                                <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="w-[21px] fill-current">
+                                <path
+                                    d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+                                </svg>
+                        
+                                <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="w-[21px] fill-current hidden">
+                                <path
+                                    d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+                                </svg>
+                            </button>
+                            </div>
+                        
+                            <figcaption class="text-[18px] leading-[24px]">JAZZ ipsum dolor sit amet </figcaption>
+                        </figure>
+                        
+                        <!-- Copy the same structure for Player 2 -->
+                        <figure class="custom-audio-player flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
+                            <audio src="https://playerservices.streamtheworld.com/api/livestream-redirect/KXJZAAC.aac"></audio>
+                        
+                            <div class="flex items-center justify-center">
+                            <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
+                                <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="w-[21px] fill-current">
+                                <path
+                                    d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+                                </svg>
+                        
+                                <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="w-[21px] fill-current hidden">
+                                <path
+                                    d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5 21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+                                </svg>
+                            </button>
+                            </div>
+                        
+                            <figcaption class="text-[18px] leading-[24px]">NEWS ipsum dolor sit amet </figcaption>
+                        </figure>
+                        
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center max-w-[750px] md:flex-row">
+                        <img src="/img/your-message.png" alt="" class="md:order-2 order-1 mb-4 w-[300px] max-w-[400px] md:mr-[60px] ">
+                        
+                        <div class="md:order-1 order-2">
+                            <h3 class="mb-2 text-[24px] leading-[29px] font-semibold">Broadcast</h3>
+                            <p class="mb-4 text-[18px] leading-[24px] md:mb-[36px]">
+                                Lorem ipsum dolor sit amet consectetur. Volutpat at risus in mi nisl sit. Magna est risus amet imperdiet nunc at accumsan feugiat lectus. Ultrices et ultrices libero congue. Fringilla nec eget sem senectus.
+                            </p>
                         </div>
-                      
-                        <figcaption class="text-[18px] leading-[24px]">JAZZ ipsum dolor sit amet </figcaption>
-                      </figure>
-                      
-                      <!-- Copy the same structure for Player 2 -->
-                      <figure class="custom-audio-player flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
-                        <audio src="https://playerservices.streamtheworld.com/api/livestream-redirect/KXJZAAC.aac"></audio>
-                      
-                        <div class="flex items-center justify-center">
-                          <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
-                            <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                              class="w-[21px] fill-current">
-                              <path
-                                d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
-                            </svg>
-                      
-                            <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                              class="w-[21px] fill-current hidden">
-                              <path
-                                d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5 21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
-                            </svg>
-                          </button>
-                        </div>
-                      
-                        <figcaption class="text-[18px] leading-[24px]">NEWS ipsum dolor sit amet </figcaption>
-                      </figure>
-                       
+                </div>
+
+                <div class="flex flex-col items-center max-w-[750px] md:flex-row">
+                    <img src="/img/your-message.png" alt="" class="mb-4 w-[300px] max-w-[400px] md:mr-[60px] ">
+
+                    <div class="">
+                        <h3 class="mb-2 text-[24px] leading-[29px] font-semibold">Broadcast</h3>
+                        <p class="mb-4 text-[18px] leading-[24px] md:mb-[36px]">
+                            Lorem ipsum dolor sit amet consectetur. Volutpat at risus in mi nisl sit. Magna est risus amet imperdiet nunc at accumsan feugiat lectus. Ultrices et ultrices libero congue. Fringilla nec eget sem senectus.
+                        </p>
+
+                        <figure class="custom-audio-player mb-[8px] flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
+                            <audio src="https://23263.live.streamtheworld.com/JAZZSTREAM.mp3"></audio>
+                        
+                            <div class="flex items-center justify-center">
+                            <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
+                                <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="w-[21px] fill-current">
+                                <path
+                                    d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+                                </svg>
+                        
+                                <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="w-[21px] fill-current hidden">
+                                <path
+                                    d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+                                </svg>
+                            </button>
+                            </div>
+                        
+                            <figcaption class="text-[18px] leading-[24px]">JAZZ ipsum dolor sit amet </figcaption>
+                        </figure>
+                        
+                        <!-- Copy the same structure for Player 2 -->
+                        <figure class="custom-audio-player flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px]">
+                            <audio src="https://playerservices.streamtheworld.com/api/livestream-redirect/KXJZAAC.aac"></audio>
+                        
+                            <div class="flex items-center justify-center">
+                            <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
+                                <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="w-[21px] fill-current">
+                                <path
+                                    d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+                                </svg>
+                        
+                                <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                class="w-[21px] fill-current hidden">
+                                <path
+                                    d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5 21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+                                </svg>
+                            </button>
+                            </div>
+                        
+                            <figcaption class="text-[18px] leading-[24px]">NEWS ipsum dolor sit amet </figcaption>
+                        </figure>
+                        
+                    </div>
                 </div>
             </div>
               
