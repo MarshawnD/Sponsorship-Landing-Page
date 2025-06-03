@@ -86,3 +86,9 @@
     height: auto;
     fill: #333;
   }
+
+  @media (min-width: 2000px) {
+    .giant {
+      margin-left: 15%;
+    }
+  }
