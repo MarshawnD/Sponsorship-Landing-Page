@@ -771,6 +771,10 @@ video {
   max-width: 750px;
 }
 
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
 .rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -991,6 +995,16 @@ video {
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px-\[40px\] {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .pb-2 {
@@ -1405,6 +1419,10 @@ video {
     padding: 2rem;
   }
 
+  .md\:p-\[40px\] {
+    padding: 40px;
+  }
+
   .md\:px-\[40px\] {
     padding-left: 40px;
     padding-right: 40px;
@@ -1413,6 +1431,11 @@ video {
   .md\:py-\[40px\] {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .md\:py-\[60px\] {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .md\:pl-\[40px\] {
@@ -1463,6 +1486,16 @@ video {
 
   .lg\:justify-normal {
     justify-content: normal;
+  }
+
+  .lg\:px-\[120px\] {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .lg\:py-\[80px\] {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .lg\:text-\[56px\] {
@@ -1531,6 +1564,11 @@ video {
 
   .xl\:gap-\[37px\] {
     gap: 37px;
+  }
+
+  .xl\:px-\[120px\] {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
   .xl\:pl-\[0px\] {
