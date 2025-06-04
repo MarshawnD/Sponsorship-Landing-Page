@@ -1340,13 +1340,21 @@ video {
 
 @media (min-width: 1400px) {
   .platform-content {
+    display: flex;
+    width: 1200px;
     max-width: 1200px;
     position: relative;
     right: 50px;
   }
 
+  .chips-container {
+    padding-left: 0px;
+    margin: 48px 0;
+  }
+
   .top-chips {
     flex-direction: row;
+    gap: 16px;
   }
 
   .top-chips div {
@@ -1360,6 +1368,8 @@ video {
 
   .bottom-chips {
     flex-direction: row;
+    gap: 16px;
+    margin-top: 16px;
   }
 
   .bottom-chips div {
@@ -1648,29 +1658,8 @@ video {
     margin-right: 120px;
   }
 
-  .xl\:my-\[48px\] {
-    margin-top: 48px;
-    margin-bottom: 48px;
-  }
-
-  .xl\:mr-\[40px\] {
-    margin-right: 40px;
-  }
-
-  .xl\:mt-\[16px\] {
-    margin-top: 16px;
-  }
-
-  .xl\:flex {
-    display: flex;
-  }
-
   .xl\:hidden {
     display: none;
-  }
-
-  .xl\:w-\[1200px\] {
-    width: 1200px;
   }
 
   .xl\:w-\[500px\] {
@@ -1681,16 +1670,8 @@ video {
     width: 600px;
   }
 
-  .xl\:w-\[640px\] {
-    width: 640px;
-  }
-
   .xl\:max-w-full {
     max-width: 100%;
-  }
-
-  .xl\:gap-\[16px\] {
-    gap: 16px;
   }
 
   .xl\:gap-\[37px\] {
@@ -1704,9 +1685,5 @@ video {
   .xl\:px-\[120px\] {
     padding-left: 120px;
     padding-right: 120px;
-  }
-
-  .xl\:pl-\[0px\] {
-    padding-left: 0px;
   }
 }

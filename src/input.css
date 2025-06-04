@@ -124,13 +124,21 @@
 
   @media (min-width: 1400px) {
     .platform-content {
+      display: flex;
+      width: 1200px;
       max-width: 1200px;
       position: relative;
       right: 50px;
     }
 
+    .chips-container {
+      padding-left: 0px;
+      margin: 48px 0;
+    }
+
     .top-chips {
       flex-direction: row;
+      gap: 16px;
     }
 
     .top-chips div {
@@ -143,6 +151,8 @@
 
     .bottom-chips {
       flex-direction: row;
+      gap: 16px;
+      margin-top: 16px;
     }
     .bottom-chips div {
       flex-direction: row;
