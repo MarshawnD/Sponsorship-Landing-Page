@@ -87,8 +87,22 @@
     fill: #333;
   }
 
-  @media (min-width: 2000px) {
-    .giant {
-      margin-left: 15%;
+  @media (min-width: 1440px) {
+    .coverage-map-container {
+      min-width: 640px;
+    }
+
+    .coverage-map {
+      width: 160%;
+    }
+  }
+
+  @media (min-width: 1728px) {
+    .coverage-map-container {
+      min-width: 740px;
+    }
+
+    .coverage-map {
+      width: 140%;
     }
   }
