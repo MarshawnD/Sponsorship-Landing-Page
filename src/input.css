@@ -87,8 +87,47 @@
     fill: #333;
   }
 
+  @media (min-width: 834px) {
+    .platform-content {
+      max-width: 754px;
+    }
+
+    .mob-coverage-map-container {
+      min-width: 417px;
+      max-height: 558px;
+    }
+
+    .mob-coverage-map {
+      width: 165%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .platform-content {
+      max-width: 944px;
+    }
+
+    .mob-coverage-map-container {
+      min-width: 560px;
+      max-height: 591px;
+    }
+
+    .mob-coverage-map {
+      width: 140%;
+    }
+  }
+
   @media (min-width: 1440px) {
+    .platform-content {
+      max-width: 1200px;
+    }
+
+    .mob-coverage-map-container{
+      display: none;
+    }
+
     .coverage-map-container {
+      display: block;
       min-width: 640px;
     }
 
