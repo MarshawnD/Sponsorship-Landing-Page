@@ -939,10 +939,6 @@ video {
   background-image: url(/img/garden-header.png);
 }
 
-.bg-contain {
-  background-size: contain;
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -1355,15 +1351,22 @@ video {
   .top-chips {
     flex-direction: row;
     gap: 16px;
+    text-align: center;
   }
 
   .top-chips div {
     flex-direction: column;
     width: 200px;
+    height: 226px;
   }
 
   .top-chips div span {
     flex-direction: column;
+    gap: 8px;
+  }
+
+  .top-chips div span p br {
+    display: none;
   }
 
   .bottom-chips {
