@@ -122,9 +122,31 @@
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1400px) {
     .platform-content {
       max-width: 1200px;
+      position: relative;
+      right: 50px;
+    }
+
+    .top-chips {
+      flex-direction: row;
+    }
+
+    .top-chips div {
+      flex-direction: column;
+      width: 200px;
+    }
+    .top-chips div span {
+      flex-direction: column;
+    }
+
+    .bottom-chips {
+      flex-direction: row;
+    }
+    .bottom-chips div {
+      flex-direction: row;
+      width: 312px;
     }
 
     .mob-coverage-map-container{
