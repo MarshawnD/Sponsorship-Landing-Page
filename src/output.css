@@ -1053,6 +1053,10 @@ video {
   padding-left: 20px;
 }
 
+.pr-\[20px\] {
+  padding-right: 20px;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1323,7 +1327,16 @@ video {
   fill: #333;
 }
 
-@media (min-width: 834px) {
+.mob-coverage-map-container {
+  max-width: 330px;
+  max-height: 339px;
+}
+
+.mob-coverage-map {
+  width: 165%;
+}
+
+@media (min-width: 768px) {
   .platform-content {
     max-width: 754px;
   }
@@ -1331,10 +1344,6 @@ video {
   .mob-coverage-map-container {
     min-width: 417px;
     max-height: 558px;
-  }
-
-  .mob-coverage-map {
-    width: 165%;
   }
 }
 
@@ -1353,7 +1362,7 @@ video {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .platform-content {
     max-width: 1200px;
   }
@@ -1413,10 +1422,6 @@ video {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:flex-row {
-    flex-direction: row;
   }
 
   .sm\:items-center {
@@ -1561,6 +1566,10 @@ video {
 
   .md\:pl-\[40px\] {
     padding-left: 40px;
+  }
+
+  .md\:pr-\[0px\] {
+    padding-right: 0px;
   }
 
   .md\:pt-\[60px\] {
