@@ -105,6 +105,10 @@
       min-width: 417px;
       max-height: 558px;
     }
+
+    .mob-coverage-map {
+      width: 175%;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -133,7 +137,6 @@
 
     .chips-container {
       padding-left: 0px;
-      margin: 48px 0;
     }
 
     .top-chips {
@@ -171,15 +174,15 @@
 
     .coverage-map-container {
       display: block;
-      min-width: 640px;
+      min-width: 900px;
     }
 
     .coverage-map {
-      width: 160%;
+      width: 115%;
     }
   }
 
-  @media (min-width: 1728px) {
+  /* @media (min-width: 1728px) {
     .coverage-map-container {
       min-width: 740px;
     }
@@ -187,4 +190,4 @@
     .coverage-map {
       width: 140%;
     }
-  }
+  } */
