@@ -310,48 +310,72 @@
                         <!-- Player 1 -->
                         <figure class="custom-audio-player mb-[8px] flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px] md:w-fit">
                             <audio src="https://23263.live.streamtheworld.com/JAZZSTREAM.mp3"></audio>
-                        
+                          
                             <div class="flex items-center justify-center">
-                            <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
+                              <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
                                 <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                class="w-[21px] fill-current">
-                                <path
+                                  class="w-[21px] fill-current">
+                                  <path
                                     d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
                                 </svg>
-                        
                                 <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                class="w-[21px] fill-current hidden">
-                                <path
+                                  class="w-[21px] fill-current hidden">
+                                  <path
                                     d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
                                 </svg>
-                            </button>
+                              </button>
                             </div>
-                        
-                            <figcaption class="text-[18px] leading-[24px]">JAZZ ipsum dolor sit amet </figcaption>
-                        </figure>
-                        
+                          
+                            <div class="flex flex-col gap-2 w-full">
+                              <figcaption class="text-[18px] leading-[24px]">JAZZ ipsum dolor sit amet</figcaption>
+                          
+                              <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <span class="currentTime">0:00</span>
+                                <input type="range" class="progressBar w-full" min="0" value="0" step="1">
+                                <span class="duration">0:00</span>
+                              </div>
+                          
+                              <div class="flex items-center gap-2">
+                                <button type="button" class="muteBtn text-sm">🔈</button>
+                                <input type="range" class="volumeSlider w-full" min="0" max="1" step="0.01" value="1">
+                              </div>
+                            </div>
+                          </figure>
+
                         <!-- Player 2 -->
-                        <figure class="custom-audio-player flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px] md:w-fit">
+                        <figure class="custom-audio-player mb-[8px] flex items-center w-[335px] gap-[16px] bg-white px-[24px] py-[16px] rounded-[30px] md:w-fit">
                             <audio src="https://playerservices.streamtheworld.com/api/livestream-redirect/KXJZAAC.aac"></audio>
-                        
+                          
                             <div class="flex items-center justify-center">
-                            <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
+                              <button type="button" class="playPauseBtn" aria-label="Play or pause audio">
                                 <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                class="w-[21px] fill-current">
-                                <path
+                                  class="w-[21px] fill-current">
+                                  <path
                                     d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
                                 </svg>
-                        
                                 <svg data-pause-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                class="w-[21px] fill-current hidden">
-                                <path
-                                    d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5 21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+                                  class="w-[21px] fill-current hidden">
+                                  <path
+                                    d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
                                 </svg>
-                            </button>
+                              </button>
                             </div>
-                        
-                            <figcaption class="text-[18px] leading-[24px]">NEWS ipsum dolor sit amet </figcaption>
-                        </figure>
+                          
+                            <div class="flex flex-col gap-2 w-full">
+                                <figcaption class="text-[18px] leading-[24px]">NEWS ipsum dolor sit amet </figcaption>
+                          
+                              <div class="flex items-center gap-2 text-xs text-gray-500">
+                                <span class="currentTime">0:00</span>
+                                <input type="range" class="progressBar w-full" min="0" value="0" step="1">
+                                <span class="duration">0:00</span>
+                              </div>
+                          
+                              <div class="flex items-center gap-2">
+                                <button type="button" class="muteBtn text-sm">🔈</button>
+                                <input type="range" class="volumeSlider w-full" min="0" max="1" step="0.01" value="1">
+                              </div>
+                            </div>
+                          </figure> 
                         
                     </div>
                 </div>
@@ -554,6 +578,11 @@
             const playIcon = player.querySelector('[data-play-icon]');
             const pauseIcon = player.querySelector('[data-pause-icon]');
             const btn = player.querySelector('.playPauseBtn');
+            const muteBtn = player.querySelector('.muteBtn');
+            const volumeSlider = player.querySelector('.volumeSlider');
+            const progressBar = player.querySelector('.progressBar');
+            const currentTimeEl = player.querySelector('.currentTime');
+            const durationEl = player.querySelector('.duration');
 
             btn.addEventListener('click', () => {
             if (audio.paused) {
@@ -583,6 +612,42 @@
             pauseIcon.classList.add('hidden');
             playIcon.classList.remove('hidden');
             });
+
+                        // Update volume
+            volumeSlider.addEventListener('input', () => {
+            audio.volume = volumeSlider.value;
+            muteBtn.textContent = audio.volume === 0 ? '🔇' : '🔈';
+            });
+
+            // Mute toggle
+            muteBtn.addEventListener('click', () => {
+            audio.muted = !audio.muted;
+            muteBtn.textContent = audio.muted || audio.volume === 0 ? '🔇' : '🔈';
+            });
+
+            // Set duration
+            audio.addEventListener('loadedmetadata', () => {
+            progressBar.max = Math.floor(audio.duration);
+            durationEl.textContent = formatTime(audio.duration);
+            });
+
+            // Update progress bar
+            audio.addEventListener('timeupdate', () => {
+            progressBar.value = Math.floor(audio.currentTime);
+            currentTimeEl.textContent = formatTime(audio.currentTime);
+            });
+
+            // Seek
+            progressBar.addEventListener('input', () => {
+            audio.currentTime = progressBar.value;
+            });
+
+            // Helper: Format time
+            function formatTime(time) {
+            const min = Math.floor(time / 60);
+            const sec = Math.floor(time % 60).toString().padStart(2, '0');
+            return `${min}:${sec}`;
+            }
         });
 
         // Logo Carousel //////////
