@@ -96,7 +96,7 @@
     width: 165%;
   }
 
-  @media (min-width: 768px) {
+  /* @media (min-width: 768px) {
     .platform-content {
       max-width: 754px;
     }
@@ -109,11 +109,16 @@
     .mob-coverage-map {
       width: 175%;
     }
-  }
+  } */
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .platform-content {
       max-width: 944px;
+    }
+
+    .chips-wrapper {
+      position: relative;
+      left: 85px;
     }
 
     .mob-coverage-map-container {
@@ -122,7 +127,27 @@
     }
 
     .mob-coverage-map {
-      width: 140%;
+      width: 132%;
+    }
+  }
+
+  @media (min-width: 834px) {
+    .chips-wrapper {
+      left: 60px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .chips-wrapper {
+      left: 80px;
+    }
+
+    .mob-coverage-map-container {
+      min-width: 650px;
+    }
+
+    .mob-coverage-map {
+      width: 115%;
     }
   }
 
@@ -133,6 +158,10 @@
       max-width: 1200px;
       position: relative;
       right: 50px;
+    }
+
+    .chips-wrapper {
+      left: 0;
     }
 
     .chips-container {
