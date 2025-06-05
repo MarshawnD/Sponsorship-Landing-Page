@@ -129,17 +129,30 @@
     .mob-coverage-map {
       width: 132%;
     }
+
+    .legend-container {
+      width: 100%;
+      padding-left: 110px;
+    }
   }
 
   @media (min-width: 834px) {
     .chips-wrapper {
       left: 60px;
     }
+
+    .legend-container {
+      padding-left: 80px;
+    }
   }
 
   @media (min-width: 1024px) {
     .chips-wrapper {
       left: 80px;
+    }
+
+    .legend-container {
+      padding-left: 65px;
     }
 
     .mob-coverage-map-container {
@@ -213,6 +226,11 @@
 
     .coverage-map {
       width: 115%;
+    }
+
+    .legend-container {
+      width: auto;
+      padding-left: 0px;
     }
 
     .legend {
