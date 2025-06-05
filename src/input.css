@@ -160,12 +160,17 @@
       right: 50px;
     }
 
+    .plat-first {
+      align-items: flex-start;
+    }
+
     .chips-wrapper {
       left: 0;
     }
 
     .chips-container {
-      padding-left: 0px;
+      padding-left: 0px !important;
+      margin-right: 0px !important;
     }
 
     .top-chips {
@@ -208,6 +213,10 @@
 
     .coverage-map {
       width: 115%;
+    }
+
+    .legend {
+      min-width: 760px;
     }
   }
 
