@@ -189,20 +189,21 @@
         </section>
 
     <!-- Audience Chart -->
-        <section class="bg-[#f1f1f3] lg:flex">
-            <figure class="">
-                <img src="/img/audience-mob.png" alt="" class="w-full sm:hidden">
-                <img src="/img/Audience_top.png" alt="" class="w-full hidden sm:flex lg:hidden">
-                <img src="/img/Audience_side.png" alt="" class="h-full hidden lg:flex mr-[40px]">
-            </figure>
-
-            <div class="flex flex-col text-center m-auto px-[20px] py-[40px] pb-[40px] sm:items-center md:px-[40px] lg:py-[80px]">
-                <h2 class="text-[29px] leading-[35px] font-semibold px-[2px] mb-[24px] md:max-w-[600px]">
-                    Access an Audience
-                    <br class="hidden lg:flex">
-                    That Moves the Needle 
-                </h2>
-                <div w3-include-html="audience charts.html"></div>
+        <section class="bg-[#f1f1f3] lg:flex lg:justify-center">
+            <div class="lg:w-[1200px] lg:flex">
+                <figure class="audience-imgs">
+                    <img src="/img/audience_mob.png" alt="" class="w-full sm:hidden">
+                    <img src="/img/Audience_top.png" alt="" class="audience-top w-full hidden">
+                    <img src="/img/Audience_side.png" alt="" class="audience-side h-[1000px] hidden min-w-[473px] mr-[40px]">
+                </figure>
+                <div class="audience-content flex flex-col m-auto px-[20px] py-[40px] pb-[40px] sm:items-center md:px-[40px] lg:py-[80px]">
+                    <h2 class="text-[29px] leading-[35px] font-semibold px-[2px] mb-[24px] md:max-w-[600px]">
+                        Access an Audience
+                        <br class="hidden lg:flex">
+                        That Moves the Needle
+                    </h2>
+                    <div w3-include-html="audience charts.html"></div>
+                </div>
             </div>
         </section>
 

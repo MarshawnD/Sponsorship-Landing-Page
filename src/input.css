@@ -111,6 +111,12 @@
     }
   } */
 
+  @media (min-width: 640px) {
+    .audience-top {
+      display: flex;
+    }
+  }
+
   @media (min-width: 768px) {
     .platform-content {
       max-width: 944px;
@@ -236,8 +242,36 @@
     .legend {
       min-width: 760px;
     }
+
+    .audience-imgs {
+      position: relative;
+      right: 10vw;
+    }
+
+    .audience-top {
+      display: none;
+    }
+
+    .audience-side {
+      display: flex;
+    }
+
+    .audience-content {
+      position: relative;
+      right: 10vw;
+    }
   }
 
+  @media (min-width: 2000px) {
+    .audience-top {
+      display: flex;
+    }
+
+    .audience-side {
+      display: none;
+    }
+  }
+  
   /* @media (min-width: 1728px) {
     .coverage-map-container {
       min-width: 740px;

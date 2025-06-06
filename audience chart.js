@@ -34,12 +34,12 @@ function showTab(index) {
   if (index === 0) {
     const stats = tabData[0].stats;
     content.innerHTML = `
-      <div class="text-center">
-        <p class="text-lg max-w-2xl mx-auto">
+      <div class="max-w-[585px] mb-[24px] md:mb-[32px]">
+        <p class="text-[18px] leading-[24px]">
           CapRadio listeners are more than just listeners. They’re curious, engaged and action-oriented choosing CapRadio to stay informed, involved and inspired. Your message reaches them across platforms and across the region with trusted content that earns attention.
         </p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
         ${stats.map(s => `
           <div class="rounded-xl bg-gray-100 p-6 text-center">
             <h4 class="font-bold text-sm text-[#6B1E1E]">${s.label}</h4>
