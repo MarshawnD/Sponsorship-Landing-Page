@@ -312,7 +312,7 @@
                         <figure class="custom-audio-player mb-[8px] flex items-center min-w-[335px] w-[335px] gap-[16px] bg-white p-[16px] rounded-[30px]">
                             <audio src="/060525folsomboulevardstory.mp3"></audio>
                           
-                            <div class="flex flex-col gap-2 w-full">
+                            <div class="flex flex-col w-full">
                                 <div class="flex gap-[16px] items-center justify-center">
                                     <button type="button" class="playPauseBtn min-w-[60px] min-h-[60px] rounded-[35px] bg-[#9E2A2F] text-white flex justify-center transition-all duration-300 ease-in-out" aria-label="Play or pause audio">
                                       <svg data-play-icon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[21px] ml-[4px] fill-current">
@@ -325,11 +325,11 @@
 
                                     <div class="grid gap-[8px]">
                                         <figcaption class="leading-[21px] font-normal">Audio Title And Description About This Length</figcaption>
-                                        <span class="text-[14px] leading-[18px] text-[#2e3033]">2:32</span>
+                                        <span class="placeholder-duration text-[14px] leading-[18px] text-[#2e3033]">2:32</span>
                                       </div>
                                   </div>
                           
-                              <div class="controls-wrapper transition-all duration-500 max-h-0 opacity-0 overflow-hidden flex gap-[32px]">
+                              <div class="controls-wrapper transition-all duration-500 max-h-0 opacity-0 overflow-hidden flex justify-between">
                                 <div class="flex items-center gap-[8px] text-[14px] leading-[18px] text-[#2e3033]">
                                     <span class="currentTime">0:00</span>
                                     <input
@@ -588,6 +588,7 @@
         const btn = player.querySelector('.playPauseBtn');
         const controlsWrapper = player.querySelector('.controls-wrapper');
         const currentTimeEl = player.querySelector('.currentTime');
+        const placeholderDuration = player.querySelector('.placeholder-duration');
         const durationEl = player.querySelector('.duration');
         const muteBtn = player.querySelector('.muteBtn');
         const iconOn = muteBtn.querySelector('[data-volume-on]');
@@ -636,7 +637,7 @@
                 otherPauseIcon.classList.add('hidden');
                 otherBtn.classList.remove('min-w-[42px]', 'min-h-[42px]');
                 otherBtn.classList.add('min-w-[60px]', 'min-h-[60px]');
-                otherControls.classList.remove('max-h-[200px]', 'opacity-100');
+                otherControls.classList.remove('mt-[16px]', 'opacity-100');
                 otherControls.classList.add('max-h-0', 'opacity-0');
                 }
             });
@@ -644,11 +645,12 @@
             // Play current player
             audio.play();
             playIcon.classList.add('hidden');
+            placeholderDuration.classList.add('hidden');
             pauseIcon.classList.remove('hidden');
             btn.classList.remove('min-w-[60px]', 'min-h-[60px]');
             btn.classList.add('min-w-[42px]', 'min-h-[42px]');
             controlsWrapper.classList.remove('max-h-0', 'opacity-0');
-            controlsWrapper.classList.add('max-h-[200px]', 'opacity-100');
+            controlsWrapper.classList.add('mt-[16px]', 'opacity-100');
             } else {
             // Pause current player
             audio.pause();
@@ -661,8 +663,6 @@
         audio.addEventListener('ended', () => {
             playIcon.classList.remove('hidden');
             pauseIcon.classList.add('hidden');
-            btn.classList.remove('min-w-[42px]', 'min-h-[42px]');
-            btn.classList.add('min-w-[60px]', 'min-h-[60px]');
             // Leave controls visible until another player plays
         });
         });
