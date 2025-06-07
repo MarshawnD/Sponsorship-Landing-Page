@@ -802,6 +802,22 @@ video {
   width: 24px;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
+.w-\[90px\] {
+  width: 90px;
+}
+
+.w-\[35px\] {
+  width: 35px;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -820,6 +836,14 @@ video {
 
 .min-w-\[42px\] {
   min-width: 42px;
+}
+
+.min-w-\[40px\] {
+  min-width: 40px;
+}
+
+.min-w-\[35px\] {
+  min-width: 35px;
 }
 
 .max-w-5xl {
@@ -943,6 +967,10 @@ video {
 
 .gap-\[8px\] {
   gap: 8px;
+}
+
+.gap-\[4px\] {
+  gap: 4px;
 }
 
 .overflow-hidden {
