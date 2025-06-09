@@ -65,8 +65,9 @@ function showTab(index) {
 
   content.innerHTML = `
     <div class="leading-[21px] grid content-center grid-cols-1 md:grid-cols-2 gap-[16px]">
-      <div class="bg-gray-100 p-[16px] rounded-[40px]">
-        <p class="text-center">CapRadio ${index === 1 ? "news" : "music"} listeners spend over <strong>$2.5 billion annually</strong> in metro area retail sales</p>
+      <div class="bg-gray-100 grid gap-[8px] justify-items-center content-center p-[16px] rounded-[40px]">
+        <svg class="w-[61px] fill-[#9E2A2FCC]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 616 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5 .6 9.1 .9 13.7 .9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1 .8-12.1 1.2-18.2 1.2z"/></svg>
+        <p class="text-center text-[#5C0000]">CapRadio ${index === 1 ? "news" : "music"} listeners spend over <strong>$2.5 billion annually</strong> in metro area retail sales</p>
       </div>
       <div class="bg-gray-100 grid justify-center p-[16px] rounded-[40px] h-[240px]">
         <h5 class="text-center relative top-[32px]">GENDER</h5>
@@ -122,7 +123,7 @@ function showTab(index) {
       labels: ageChartLabels,
       datasets: [{
         data: data.agePercentage,
-        backgroundColor: ['#E27D60', '#E8A87C', '#C38D9E', '#41B3A3', '#6B1E1E'],
+        backgroundColor: ['#E49A23E5', '#EC4F2EE5', '#9E2A2FE5', '#1C6380E5', '#009B79E5'],
         borderWidth: 0
       }]
     },
@@ -135,7 +136,7 @@ function showTab(index) {
       labels: incomeChartLabels,
       datasets: [{
         data: data.incomePercentage,
-        backgroundColor: ['#6B1E1E', '#A63D40', '#D95D39'],
+        backgroundColor: ['#5C0000E5', '#9E2A2FE5', '#C53834E5'],
         borderWidth: 0
       }]
     },

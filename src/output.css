@@ -850,6 +850,14 @@ video {
   width: 208px;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-\[61px\] {
+  width: 61px;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -975,6 +983,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-6 {
@@ -1120,6 +1132,10 @@ video {
 
 .fill-current {
   fill: currentColor;
+}
+
+.fill-\[\#9E2A2FCC\] {
+  fill: #9E2A2FCC;
 }
 
 .p-2 {
