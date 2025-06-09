@@ -51,7 +51,7 @@ function showTab(index) {
         </div>
       `).join('')}
       </div>
-      <p class="text-xs mt-[12px] italic text-gray-500">
+      <p class="text-[14px] mt-[12px] italic text-[#2e3033]">
         Sources: Information about where we sourced our data. Some more info and maybe a link.
       </p>
     `;
@@ -64,25 +64,25 @@ function showTab(index) {
   const incomeChartLabels = data.incomePercentage.map((v, i) => `${v}% ${income[i]}`);
 
   content.innerHTML = `
-    <div class="leading-[21px] grid grid-cols-1 md:grid-cols-2 gap-[16px]">
+    <div class="leading-[21px] grid content-center grid-cols-1 md:grid-cols-2 gap-[16px]">
       <div class="bg-gray-100 p-[16px] rounded-[40px]">
         <p class="text-center">CapRadio ${index === 1 ? "news" : "music"} listeners spend over <strong>$2.5 billion annually</strong> in metro area retail sales</p>
       </div>
       <div class="bg-gray-100 grid justify-center p-[16px] rounded-[40px] h-[240px]">
-        <h5 class="text-center">Gender</h5>
+        <h5 class="text-center relative top-[32px]">GENDER</h5>
         <canvas id="genderChart"></canvas>
       </div>
-      <div class="bg-gray-100 p-[16px] rounded-[40px]">
-        <h5 class="text-center">Age Ranges</h5>
+      <div class="bg-gray-100 grid justify-center p-[16px] rounded-[40px] h-[300px]">
+        <h5 class="text-center relative top-[28px]">AGE RANGES</h5>
         <canvas id="ageChart"></canvas>
       </div>
-      <div class="bg-gray-100 p-[16px] rounded-[40px]">
-        <h5 class="text-center">Household Income</h5>
+      <div class="bg-gray-100 grid justify-center p-[16px] rounded-[40px] h-[300px]">
+        <h5 class="text-center relative top-[28px]">HOUSEHOLD INCOME</h5>
         <canvas id="incomeChart"></canvas>
       </div>
     </div>
-    <p class="text-xs mt-4 italic text-gray-500">
-      Sources: Information about where we sourced our data. Some more info and maybe a link or just date ranges.
+    <p class="text-[14px] mt-[12px] italic text-[#2e3033]">
+      Sources: Information about where we sourced our data. Some more info and maybe a link.
     </p>
   `;
 
@@ -109,7 +109,7 @@ function showTab(index) {
       labels: genderChartLabels,
       datasets: [{
         data: data.genderPercentage,
-        backgroundColor: ['#134C5E', '#4DA6B3'],
+        backgroundColor: ['#1C6380E5', '#00A3BAE5'],
         borderWidth: 0
       }]
     },
