@@ -19,6 +19,9 @@ const tabData = [
   }
 ];
 
+const colors = ['text-[#9E2A2F]', 'text-[#1C6380]', 'text-[#861766]', 'text-[#EC4F2E]'];
+const darkColors = ['text-[#5C0000]', 'text-[#002B3C]', 'text-[#4A1740]', 'text-[#9E2A2F]'];
+
 const age = ['18–34', '35–44', '45–54', '55–64', '65+'];
 const income = ['$100K+', '$50K–$100K', 'Under $50K'];
 const gender = ['Male', 'Female'];
@@ -40,13 +43,13 @@ function showTab(index) {
         </p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-[16px]">
-        ${stats.map(s => `
-          <div class="w-[300px] h-[190px] rounded-[40px] bg-gray-100 p-[24px] text-center">
-            <h4 class="font-semibold text-[14px] leading-[15px] text-[#9E2A2F] mb-[16px]">${s.label}</h4>
-            <p class="text-[49px] leading-[58.8px] font-semibold text-[#9E2A2F]">${s.percent}</p>
-            <p class="text-[#5C0000]">${s.desc}</p>
-          </div>
-        `).join('')}
+      ${stats.map((s, i) => `
+        <div class="w-[300px] h-[190px] grid justify-between rounded-[40px] bg-gray-100 p-[24px] text-center">
+          <h4 class="font-semibold text-[14px] leading-[15px] ${colors[i]}">${s.label}</h4>
+          <p class="text-[49px] leading-[58.8px] font-semibold ${colors[i]}">${s.percent}</p>
+          <p class="${darkColors[i]}">${s.desc}</p>
+        </div>
+      `).join('')}
       </div>
       <p class="text-xs mt-[12px] italic text-gray-500">
         Sources: Information about where we sourced our data. Some more info and maybe a link.
@@ -61,20 +64,20 @@ function showTab(index) {
   const incomeChartLabels = data.incomePercentage.map((v, i) => `${v}% ${income[i]}`);
 
   content.innerHTML = `
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
-      <div class="bg-gray-100 p-[24px] rounded-[40px]">
+    <div class="leading-[21px] grid grid-cols-1 md:grid-cols-2 gap-[16px]">
+      <div class="bg-gray-100 p-[16px] rounded-[40px]">
         <p class="text-center">CapRadio ${index === 1 ? "news" : "music"} listeners spend over <strong>$2.5 billion annually</strong> in metro area retail sales</p>
       </div>
-      <div class="bg-gray-100 p-[24px] rounded-[40px]">
-        <h3 class="text-center text-lg mt-2">Gender</h3>
+      <div class="bg-gray-100 grid justify-center p-[16px] rounded-[40px] h-[240px]">
+        <h5 class="text-center">Gender</h5>
         <canvas id="genderChart"></canvas>
       </div>
-      <div class="bg-gray-100 p-[24px] rounded-[40px]">
-        <h3 class="text-center text-lg mt-2">Age Ranges</h3>
+      <div class="bg-gray-100 p-[16px] rounded-[40px]">
+        <h5 class="text-center">Age Ranges</h5>
         <canvas id="ageChart"></canvas>
       </div>
-      <div class="bg-gray-100 p-[24px] rounded-[40px]">
-        <h3 class="text-center text-lg mt-2">Household Income</h3>
+      <div class="bg-gray-100 p-[16px] rounded-[40px]">
+        <h5 class="text-center">Household Income</h5>
         <canvas id="incomeChart"></canvas>
       </div>
     </div>
