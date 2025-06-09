@@ -35,20 +35,20 @@ function showTab(index) {
     const stats = tabData[0].stats;
     content.innerHTML = `
       <div class="max-w-[585px] mb-[24px] md:mb-[32px]">
-        <p class="text-[18px] leading-[24px]">
+        <p class="h-[90px] text-[18px] leading-[24px]">
           CapRadio listeners are more than just listeners. They’re curious, engaged and action-oriented choosing CapRadio to stay informed, involved and inspired. Your message reaches them across platforms and across the region with trusted content that earns attention.
         </p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-[16px]">
         ${stats.map(s => `
-          <div class="rounded-xl bg-gray-100 p-6 text-center">
-            <h4 class="font-bold text-sm text-[#6B1E1E]">${s.label}</h4>
-            <p class="text-4xl font-bold my-2 text-[#6B1E1E]">${s.percent}</p>
-            <p class="text-sm text-gray-600">${s.desc}</p>
+          <div class="w-[300px] h-[190px] rounded-[40px] bg-gray-100 p-[24px] text-center">
+            <h4 class="font-semibold text-[14px] leading-[15px] text-[#9E2A2F] mb-[16px]">${s.label}</h4>
+            <p class="text-[49px] leading-[58.8px] font-semibold text-[#9E2A2F]">${s.percent}</p>
+            <p class="text-[#5C0000]">${s.desc}</p>
           </div>
         `).join('')}
       </div>
-      <p class="text-xs mt-4 italic text-gray-500">
+      <p class="text-xs mt-[12px] italic text-gray-500">
         Sources: Information about where we sourced our data. Some more info and maybe a link.
       </p>
     `;
@@ -61,19 +61,19 @@ function showTab(index) {
   const incomeChartLabels = data.incomePercentage.map((v, i) => `${v}% ${income[i]}`);
 
   content.innerHTML = `
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-gray-100 p-4 rounded-xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
+      <div class="bg-gray-100 p-[24px] rounded-[40px]">
         <p class="text-center">CapRadio ${index === 1 ? "news" : "music"} listeners spend over <strong>$2.5 billion annually</strong> in metro area retail sales</p>
       </div>
-      <div class="bg-gray-100 p-4 rounded-xl">
+      <div class="bg-gray-100 p-[24px] rounded-[40px]">
         <h3 class="text-center text-lg mt-2">Gender</h3>
         <canvas id="genderChart"></canvas>
       </div>
-      <div class="bg-gray-100 p-4 rounded-xl">
+      <div class="bg-gray-100 p-[24px] rounded-[40px]">
         <h3 class="text-center text-lg mt-2">Age Ranges</h3>
         <canvas id="ageChart"></canvas>
       </div>
-      <div class="bg-gray-100 p-4 rounded-xl">
+      <div class="bg-gray-100 p-[24px] rounded-[40px]">
         <h3 class="text-center text-lg mt-2">Household Income</h3>
         <canvas id="incomeChart"></canvas>
       </div>
