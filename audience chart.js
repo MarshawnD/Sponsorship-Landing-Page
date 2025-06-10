@@ -42,7 +42,7 @@ function showTab(index) {
           CapRadio listeners are more than just listeners. They’re curious, engaged and action-oriented choosing CapRadio to stay informed, involved and inspired. Your message reaches them across platforms and across the region with trusted content that earns attention.
         </p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-[16px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
       ${stats.map((s, i) => `
         <div class="w-[300px] h-[190px] grid justify-between rounded-[40px] bg-gray-100 p-[24px] text-center">
           <h4 class="font-semibold text-[14px] leading-[15px] ${colors[i]}">${s.label}</h4>
