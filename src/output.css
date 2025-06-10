@@ -1861,6 +1861,10 @@ video {
     width: auto;
   }
 
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
   .md\:max-w-\[600px\] {
     max-width: 600px;
   }
@@ -1969,6 +1973,10 @@ video {
 
   .lg\:w-\[825px\] {
     width: 825px;
+  }
+
+  .lg\:w-\[500px\] {
+    width: 500px;
   }
 
   .lg\:min-w-\[825px\] {
