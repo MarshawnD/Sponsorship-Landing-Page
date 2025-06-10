@@ -684,10 +684,6 @@ video {
   display: none;
 }
 
-.h-\[1000px\] {
-  height: 1000px;
-}
-
 .h-\[15px\] {
   height: 15px;
 }
@@ -984,10 +980,6 @@ video {
   border-radius: 40px;
 }
 
-.rounded-\[60px\] {
-  border-radius: 60px;
-}
-
 .rounded-\[8px\] {
   border-radius: 8px;
 }
@@ -1135,11 +1127,6 @@ video {
 .px-\[24px\] {
   padding-left: 24px;
   padding-right: 24px;
-}
-
-.px-\[2px\] {
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 .px-\[40px\] {
@@ -1651,6 +1638,11 @@ video {
     width: 312px;
   }
 
+  .chip-numbers {
+    font-size: 39px;
+    line-height: 46.8px;
+  }
+
   .mob-coverage-map-container{
     display: none;
   }
@@ -1751,16 +1743,16 @@ video {
     margin: 8px;
   }
 
+  .sm\:mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+
   .sm\:mb-\[60px\] {
     margin-bottom: 60px;
   }
 
   .sm\:mt-0 {
     margin-top: 0px;
-  }
-
-  .sm\:mb-\[40px\] {
-    margin-bottom: 40px;
   }
 
   .sm\:hidden {
@@ -1972,17 +1964,8 @@ video {
     padding-bottom: 60px;
   }
 
-  .md\:px-\[48px\] {
-    padding-left: 48px;
-    padding-right: 48px;
-  }
-
   .md\:pl-\[40px\] {
     padding-left: 40px;
-  }
-
-  .md\:pt-\[60px\] {
-    padding-top: 60px;
   }
 
   .md\:text-\[25px\] {
@@ -2023,16 +2006,12 @@ video {
     margin-bottom: 150px;
   }
 
-  .lg\:mt-\[300px\] {
-    margin-top: 300px;
-  }
-
   .lg\:mb-\[48px\] {
     margin-bottom: 48px;
   }
 
-  .lg\:flex {
-    display: flex;
+  .lg\:mt-\[300px\] {
+    margin-top: 300px;
   }
 
   .lg\:h-\[544px\] {
@@ -2057,10 +2036,6 @@ video {
 
   .lg\:min-w-\[825px\] {
     min-width: 825px;
-  }
-
-  .lg\:max-w-\[600px\] {
-    max-width: 600px;
   }
 
   .lg\:flex-row {
@@ -2168,12 +2143,12 @@ video {
     width: 600px;
   }
 
-  .xl\:max-w-full {
-    max-width: 100%;
-  }
-
   .xl\:max-w-\[600px\] {
     max-width: 600px;
+  }
+
+  .xl\:max-w-full {
+    max-width: 100%;
   }
 
   .xl\:items-start {
@@ -2201,11 +2176,6 @@ video {
     padding-right: 120px;
   }
 
-  .xl\:px-\[20x\] {
-    padding-left: 20x;
-    padding-right: 20x;
-  }
-
   .xl\:px-\[20px\] {
     padding-left: 20px;
     padding-right: 20px;
@@ -2221,6 +2191,14 @@ video {
 
   .xl\:text-left {
     text-align: left;
+  }
+
+  .xl\:text-\[39px\] {
+    font-size: 39px;
+  }
+
+  .xl\:leading-\[46\.8px\] {
+    line-height: 46.8px;
   }
 }
 

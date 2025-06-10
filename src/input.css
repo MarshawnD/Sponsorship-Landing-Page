@@ -221,6 +221,11 @@
       width: 312px;
     }
 
+    .chip-numbers {
+      font-size: 39px;
+      line-height: 46.8px;
+    }
+
     .mob-coverage-map-container{
       display: none;
     }
