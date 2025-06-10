@@ -243,6 +243,16 @@
       min-width: 760px;
     }
 
+    .audience-section {
+      display: flex;
+      justify-content: center;
+    }
+
+    .audience-wrapper {
+      display: flex;
+      width: 1200px;
+    }
+
     .audience-imgs {
       position: relative;
       right: 10vw;
@@ -262,7 +272,34 @@
     }
   }
 
+  @media (min-width: 1500px) {
+    .audience-imgs {
+      right: 22vw;
+    }
+
+    .audience-side {
+     min-width: 580px;
+    }
+
+    .audience-content {
+      right: 15vw;
+    }
+  }
+
   @media (min-width: 2000px) {
+    .audience-wrapper {
+      display: block;
+      width: 1200px;
+    }
+
+    .audience-imgs {
+      right: 0;
+    }
+
+    .audience-content {
+      right: 0;
+    }
+
     .audience-top {
       display: flex;
     }
