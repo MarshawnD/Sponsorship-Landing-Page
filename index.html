@@ -601,11 +601,11 @@
         <div class="flex flex-col lg:flex-row">
           
           <!-- LEFT: Full-width red gradient background -->
-          <div class="w-full bg-gradient-to-b from-[#9E2A2F] to-[#5C0000] flex items-center justify-center rounded-b-full lg:h-[544px] lg:w-1/2 lg:rounded-b-none lg:rounded-r-full xl:justify-end">
+          <div class="w-full bg-gradient-to-b from-[#9E2A2F] to-[#5C0000] flex items-center justify-center rounded-b-[77px] lg:h-[544px] lg:w-1/2 lg:rounded-b-none lg:rounded-r-full xl:justify-end">
             <!-- Constrained content inside red background -->
-            <div class="w-full max-w-[600px] px-[20px] py-[40px] text-white text-center">
-              <h2 class="text-white  text-[39px] leading-[46.8px] font-semibold mb-[16px]">Get Started as a Sponsor</h2>
-              <p class="text-[18px] leading-[24px] mb-[32px]">
+            <div class="w-full flex flex-col items-center px-[20px] py-[40px] text-white text-center md:py-[60px] lg:items-start">
+              <h2 class="text-white text-[29px] leading-[35px] font-semibold px-[40px] mb-[16px] sm:px-0 md:text-[35px] md:leading-[42px] lg:text-[39px] lg:leading-[46.8px]">Get Started as a Sponsor</h2>
+              <p class="text-[18px] leading-[24px] text-left mb-[32px] max-w-[500px]">
                 Your brand stands out in front of the valuable CapRadio audience. Contact us and learn more about the benefits of becoming a CapRadio Corporate Sponsor.
               </p>
               <button type="button" class="px-[24px] py-[13px] rounded-[30px] bg-white text-[#2E3033] text-[20px] leading-[24px] font-semibold">
@@ -617,8 +617,8 @@
           <!-- RIGHT: Form with light gray background -->
           <div class="w-full lg:w-1/2 bg-[#f1f1f3] flex items-center justify-center xl:justify-start">
             <div class="w-full px-[20px] py-[40px] lg:py-[80px] lg:pl-[40px] lg:pr-[0px]">
-                <form class="sponsorshipgetstarted w-full">
-                    <div class="flex flex-col lg:flex-row gap-[16px] mb-4 max-w-[500px] sm:w-[500px]">
+                <form class="sponsorshipgetstarted w-full flex flex-col sm:items-center">
+                    <div class="flex flex-col sm:flex-row gap-[16px] mb-4 max-w-[500px] sm:w-[500px]">
                       <input
                         type="text"
                         name="firstName"
@@ -664,11 +664,13 @@
                       />
                     </div>
                   
-                    <input
-                      type="submit"
-                      value="Submit"
-                      class="rounded-[30px] bg-[#9E2A2F] px-[24px] py-[13px] text-white text-[20px] font-extrabold leading-[24px] w-[180px] hover:brightness-110 transition"
-                    />
+                    <div class="sm:w-[500px] flex items-start">
+                        <input
+                          type="submit"
+                          value="Submit"
+                          class="rounded-[30px] bg-[#9E2A2F] px-[24px] py-[13px] text-white text-[20px] font-extrabold leading-[24px] w-[180px] hover:brightness-110 transition"
+                        />
+                    </div>
                   </form>
                   
                   
