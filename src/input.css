@@ -293,19 +293,11 @@
     }
 
     .audience-imgs {
-      right: 0;
+      display: none;
     }
 
     .audience-content {
       right: 0;
-    }
-
-    .audience-top {
-      display: flex;
-    }
-
-    .audience-side {
-      display: none;
     }
   }
   
