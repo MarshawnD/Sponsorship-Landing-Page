@@ -805,6 +805,10 @@ video {
   width: 500px;
 }
 
+.w-\[241px\] {
+  width: 241px;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -2007,6 +2011,10 @@ video {
     width: 825px;
   }
 
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
   .lg\:min-w-\[825px\] {
     min-width: 825px;
   }
@@ -2072,6 +2080,10 @@ video {
     padding-top: 80px;
   }
 
+  .lg\:pr-\[40px\] {
+    padding-right: 40px;
+  }
+
   .lg\:text-\[56px\] {
     font-size: 56px;
   }
@@ -2111,6 +2123,14 @@ video {
     max-width: 100%;
   }
 
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:items-end {
+    align-items: flex-end;
+  }
+
   .xl\:justify-start {
     justify-content: flex-start;
   }
@@ -2134,6 +2154,26 @@ video {
   .xl\:px-\[120px\] {
     padding-left: 120px;
     padding-right: 120px;
+  }
+
+  .xl\:pr-\[80px\] {
+    padding-right: 80px;
+  }
+
+  .xl\:pr-\[120px\] {
+    padding-right: 120px;
+  }
+
+  .xl\:pl-\[80px\] {
+    padding-left: 80px;
+  }
+
+  .xl\:pr-\[0px\] {
+    padding-right: 0px;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 }
 
