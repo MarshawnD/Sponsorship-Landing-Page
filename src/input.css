@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.soft-curve-left {
+  clip-path: ellipse(130% 100% at 0% 50%);
+}
+
 .carousel-wrapper {
     position: relative;
     width: 100%;
