@@ -590,9 +590,29 @@
     <!-- Form -->
     <section class="w-full bg-[#f1f1f3]">
         <div class="flex flex-col lg:flex-row lg:items-center lg:overflow-y-hidden lg:max-h-[544px]">
-          
-          <!-- LEFT: Full-width red gradient background -->
-          <div class="w-full bg-gradient-to-b from-[#9E2A2F] to-[#5C0000] flex items-center justify-center rounded-b-[77px] lg:h-[1000px] lg:w-1/2 lg:rounded-b-none lg:rounded-r-full">
+        <!-- LEFT: Full-width red gradient background -->
+          <!-- Mobile Red Circle -->
+          <div class="max-h-[415px] sm:max-h-[300px] overflow-hidden flex justify-center lg:hidden">
+              <div class="h-[1000px] relative bottom-[590px] sm:bottom-[700px] min-w-[250%] bg-gradient-to-b from-[#9E2A2F] to-[#5C0000] flex items-end justify-center rounded-full lg:h-[1000px] lg:w-1/2 lg:rounded-b-none">
+                <!-- Constrained content inside red background -->
+                <div class="max-w-[500px] flex flex-col items-center px-[20px] pt-[40px] pb-[80px] text-white text-center md:py-[60px] lg:items-start lg:pr-[40px] xl:items-end xl:pr-[120px]">
+                  <div class="max-w-[70%] sm:max-w-[90%] flex flex-col items-center xl:items-start">
+                      <h2 class="text-white text-[29px] leading-[35px] font-semibold px-[40px] mb-[16px] sm:px-0 md:text-[35px] md:leading-[42px] lg:text-[39px] lg:leading-[46.8px] xl:text-left">Get Started as a Sponsor</h2>
+                      <p class="text-[18px] leading-[24px] text-left mb-[32px] max-w-[500px]">
+                        Your brand stands out in front of the valuable CapRadio audience. Contact us and learn more about the benefits of becoming a CapRadio Corporate Sponsor.
+                      </p>
+                      <div class="text-center w-[241px] bg-white px-[24px] py-[13px] rounded-[30px]">
+                        <a href="/img/CapRadio Media Kit_042525.pdf" download="">
+                            <p class="text-[#2E3033] text-[20px] leading-[24px] font-semibold">Download Media Kit</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <!-- Desktop Red Circle -->
+          <div class="hidden w-full bg-gradient-to-b from-[#9E2A2F] to-[#5C0000] items-center justify-center rounded-b-[77px] lg:flex lg:h-[1000px] lg:w-1/2 lg:rounded-b-none lg:rounded-r-full">
             <!-- Constrained content inside red background -->
             <div class="w-full flex flex-col items-center px-[20px] py-[40px] text-white text-center md:py-[60px] lg:items-start lg:pr-[40px] xl:items-end xl:pr-[120px]">
               <div class="flex flex-col items-center xl:items-start">
@@ -600,7 +620,6 @@
                   <p class="text-[18px] leading-[24px] text-left mb-[32px] max-w-[500px]">
                     Your brand stands out in front of the valuable CapRadio audience. Contact us and learn more about the benefits of becoming a CapRadio Corporate Sponsor.
                   </p>
-
                   <div class="text-center w-[241px] bg-white px-[24px] py-[13px] rounded-[30px]">
                     <a href="/img/CapRadio Media Kit_042525.pdf" download="">
                         <p class="text-[#2E3033] text-[20px] leading-[24px] font-semibold">Download Media Kit</p>
