@@ -93,6 +93,11 @@ function showTab(index) {
   const commonOptions = {
     plugins: {
       legend: {
+        // disable label pointer events
+        onClick: () => {},
+        onHover: e => {
+          e.native.target.style.cursor = 'default';
+        },
         position: 'right',
         labels: {
           usePointStyle: true,
