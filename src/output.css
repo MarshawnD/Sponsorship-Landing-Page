@@ -2030,8 +2030,16 @@ video {
     height: 544px;
   }
 
+  .lg\:h-\[1000px\] {
+    height: 1000px;
+  }
+
   .lg\:max-h-\[1052px\] {
     max-height: 1052px;
+  }
+
+  .lg\:max-h-\[544px\] {
+    max-height: 544px;
   }
 
   .lg\:w-1\/2 {
@@ -2058,12 +2066,20 @@ video {
     align-items: flex-start;
   }
 
+  .lg\:items-center {
+    align-items: center;
+  }
+
   .lg\:justify-normal {
     justify-content: normal;
   }
 
   .lg\:gap-\[24px\] {
     gap: 24px;
+  }
+
+  .lg\:overflow-y-hidden {
+    overflow-y: hidden;
   }
 
   .lg\:rounded-b-none {
