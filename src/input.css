@@ -96,21 +96,6 @@
     width: 165%;
   }
 
-  /* @media (min-width: 768px) {
-    .platform-content {
-      max-width: 754px;
-    }
-
-    .mob-coverage-map-container {
-      min-width: 417px;
-      max-height: 558px;
-    }
-
-    .mob-coverage-map {
-      width: 175%;
-    }
-  } */
-
   @media (min-width: 640px) {
     .audience-top {
       display: flex;
@@ -305,13 +290,3 @@
       right: 0;
     }
   }
-  
-  /* @media (min-width: 1728px) {
-    .coverage-map-container {
-      min-width: 740px;
-    }
-
-    .coverage-map {
-      width: 140%;
-    }
-  } */
