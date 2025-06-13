@@ -38,8 +38,8 @@ function showTab(index) {
     const stats = tabData[0].stats;
     content.innerHTML = `
       <div class="max-w-[585px] mb-[24px] md:mb-[32px]">
-        <p class="text-[18px] leading-[24px] mt-[16px] sm:mt-0 md:h-[90px]">
-          CapRadio listeners are more than just listeners. They’re curious, engaged and action-oriented choosing CapRadio to stay informed, involved and inspired. Your message reaches them across platforms and across the region with trusted content that earns attention.
+        <p class="text-[18px] leading-[24px] mt-[16px] sm:mt-0">
+         CapRadio’s audience is informed, loyal and values-driven. These are community members who lead, volunteer, donate and actively participate in civic and cultural life. They turn to CapRadio across platforms for trusted journalism and cultural programming — and they notice who’s there alongside it.
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
