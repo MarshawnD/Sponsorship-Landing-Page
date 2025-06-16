@@ -96,6 +96,12 @@
     width: 165%;
   }
 
+  @media (min-width: 400px) {
+    .mob-red-circle {
+      min-width: 175%;
+    }
+  }
+
   @media (min-width: 640px) {
     .audience-top {
       display: flex;
